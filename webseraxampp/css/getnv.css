@@ -1,0 +1,131 @@
+/* Initial Code */
+*{
+  margin: 0 auto;
+  padding: 1px;
+}
+
+/* Main Section Code Below */
+div#services {
+    text-align: center;
+    font-family: 'Metal Mania';
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.ServiceInner p {
+    font-size: 30px;
+    padding: 20px;
+    color: #313d4a;
+    margin-bottom: 20px;
+}
+
+div#serviceMainBlock {text-align: center;margin-top:100px;display: inline-flex;}
+
+.ServiceBox {
+    float: left;
+    display: inline-block;
+    height: 25%;
+    width: 25%;
+}
+
+.ServiceBox.web i {
+    color: white;
+    background: #FF3A46;
+    text-align: center;
+    border-radius: 50%;
+    padding: 18px;
+    margin: 15px;
+}
+
+.ServiceBox.web {
+    background-color: #c5e5e8;
+    padding: 30px 10px;
+    border-radius:30px;
+}
+
+.ServiceBox.web p {
+    font-size: 20px;
+    padding: 41px;
+}
+
+.ServiceBox.web h2 {
+    color: #1a6970;
+}
+
+/* Graphic */
+.ServiceBox.graphic i {
+    color: white;
+    background: #00A0F0;
+    text-align: center;
+    border-radius: 50%;
+    padding: 18px;
+    margin: 15px;
+}
+
+.ServiceBox.graphic {
+    background-color: #c5e5e8;
+    padding: 25px 10px;
+    border-radius:30px;
+}
+
+.ServiceBox.graphic p {
+    font-size: 20px;
+    padding: 41px;
+}
+
+.ServiceBox.graphic h2 {
+    color: #1a6970;
+}
+
+/* VOLUNTEER */
+.ServiceBox.volunteer i {
+    color: white;
+    background: #00EBAC;
+    text-align: center;
+    border-radius: 50%;
+    padding: 18px;
+    margin: 15px;
+}
+
+.ServiceBox.volunteer {
+    background-color: #c5e5e8;
+    padding: 30px 10px;
+    border-radius:30px;
+}
+
+.ServiceBox.volunteer p {
+    font-size: 20px;
+    padding: 41px;
+}
+
+.ServiceBox.volunteer h2 {
+    color: #1a6970;
+}
+.ServiceBox {
+    box-shadow: 4px 4px 10px #afafaf;
+    transition-duration: 0.6s;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.ServiceBox.web:hover{
+    box-shadow: -3px 3px 6px #1a6970;
+    cursor: pointer;
+}
+
+.ServiceBox.graphic:hover{
+    box-shadow: -3px 3px 6px #1a6970;
+    cursor: pointer;
+}
+.ServiceBox.volunteer:hover{
+    box-shadow: -3px 3px 6px #1a6970;
+    cursor: pointer;
+}
+
+.ServiceBox p {
+    color: #3a3939;
+}
+

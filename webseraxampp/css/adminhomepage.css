@@ -1,0 +1,240 @@
+
+/*------------------------------------------------COMMON ---------------------------------------------------------------------------*/
+/**{
+   background-image: url("file://C:/Users/shefali shrivastava/Desktop/websera/imgs/bg.png");
+    background-image: url("file://C:/Users/shefali shrivastava/Desktop/websera/imgs/bg.png"); 
+
+}*/
+
+header{
+
+  background: #F58BB3;
+  padding:10px;
+  text-align: center;
+  background-image: url("file://E:/Humane/Humane/dd.png");
+  width: 100%;
+  
+}
+h1{
+  color:#ffffff;
+  text-align:center;
+  font-variant:all-small-caps;
+}
+h2{
+  color:#000000;
+  font-variant-caps: titling-caps;
+}
+
+section{
+  background-color:#ffffff;
+  font-size:120%;
+}
+
+.menu nav a{
+      display:flex;
+   justify-content:space-between;
+align-items: left;
+border-radius: 5px;
+color:#000000;
+background:#c5e5e8;
+text-decoration:none;
+display:inline-block;
+width:150px;
+padding:10px;
+margin:15px;
+}
+
+nav a:hover {
+background-color: #ffffff;
+color: #000;
+}
+body{
+margin:0px;
+bottom: 0px;
+height: 200vh;
+
+}
+#active{
+ color: #000;
+ background-color: #ffffff;
+}
+
+/*-------------------------------------------------------------*/
+.left{
+border: 0px solid #808000;
+float: left;
+height:200vh;
+text-align:center;
+padding:20px;
+background:#c5e5e8;
+width:150px;
+display: inline-block;
+}
+.left img{
+  display: inline-block;
+border: 0px solid #000000;
+text-align:center;
+width: 160px;
+height: 160px;
+margin:15px;
+border-radius: 50%;
+}
+
+.right{
+
+text-align: left;
+background: none;
+position:absolute;
+margin-left: 250px;
+float:left;
+width: 80%;
+}
+
+
+.fa-user-circle {
+color: #c5e5e8;
+font-size: 50px;
+padding-left: 30px;
+float: left;
+margin-left: 25px;
+}
+
+nav a :hover{
+color: #ffffff;
+}
+
+.left p{
+  text-align: center; 
+  color:#1a6970 ;
+   size: 40px;
+   font-size: 20px;
+   font-weight: 900;
+
+}
+
+/*--------------------------------------FOOTER-------------------------------------------------*/
+/*footer {
+  position:relative;
+ margin-top: -100px;
+  clear: both;
+  height: 150px;
+ width: 100%;
+  text-align: center;
+  font-size: 1em;
+  bottom:0;
+  background-color: #c5e5e8;
+  background-size: cover;
+   z-index: 1;
+ }
+
+
+    .fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #C13584;
+  color: white;
+} */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
+
+/* ------------- */
+/* GLOBAL STYLES */
+/* ------------- */
+
+
+#mapid{
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* ------- */
+/* tl */
+/* ------- */
+
+.tl {
+  background:  #c5e5e8;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .tl {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}

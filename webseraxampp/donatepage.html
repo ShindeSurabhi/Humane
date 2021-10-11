@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Humane:Donate Page</title>
+<link rel="shortcut icon" href="imgs\hands.png">
+<link rel="stylesheet" href="css\humane.css">
+<link rel="stylesheet" href="css\donate.css"> 
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style type="text/css">
+  .fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #C13584;
+  color: white;
+}
+.donate {
+  border-color:#1a6970 ;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #1a6970 inset, 0 0 0 0 #1a6970;
+  transition: all 150ms ease-in-out;
+  border-radius: 50px;
+  }
+
+  .donate:hover {
+    box-shadow: 0 0 10px 0 #1a6970 inset, 0 0 10px 4px #1a6970;
+    color: #000;
+  }
+</style>
+
+<body background="imgs\bg.png" >
+<header>
+
+  <h1 style="display:flex; font-size:300%;text-align:center;justify-content: center;">HUMANE:DONATE AT DOORSTEP</h1>
+
+  <div>
+  <nav><a href="userlogin.php"><i class="fas fa-user-circle"></i></a></nav>
+  </div>
+
+  <div class="menu">
+  <nav>
+    <a href="Humanehomepage.html" >HOME</a>
+    <a href="get.html">GET INVOLVED</a>
+    <a href="aboutuspage.html">ABOUT US</a>
+    <a href="contactus.html" >CONTACT US</a>
+    <a href="donatepage.html" id="active">DONATE</a>
+  </nav>
+  </div>
+</header>
+
+  <div class="wrapper">
+    <main>
+   
+        <h2>DONATION DETAILS</h2>
+        <h3>please fill the following details to donate!</h3>
+      <form action="donateinsert.php" method="POST">
+        <fieldset class="contact-info">
+          <div class="container">
+            <legend>Contact Information</legend>
+            <p>
+              <label >Full Name</label>   
+              <input type="text"  name="name" placeholder="name" minlength="3" maxlength="20" required="" /> 
+            </p>
+            <p>
+              <label>Email Address</label>   
+              <input type="email"  name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="" /> 
+            </p>
+            <p>
+              <label>Street Adress</label>   
+              <input type="text"  name="address" required="please fill in the Address"/>
+            </p>
+            <p>
+              <label>City</label>  
+              <input type="text" name="city" required="please enter your city"/> 
+            </p>
+            <p>
+              <label>State</label>
+              <select id="state" name="state">
+                <option value="state">Choose State</option>
+                <option value="abc">ABC</option>
+                <option value="def">DEF</option>
+                <option value="geh">GEH</option>
+                <option value="ijk">IJK</option>
+                <option value="ftg">FTG</option>
+                <option value="hjk">HJK</option>
+                <option value="kil">KIL</option>
+                <option value="tyu">TYU</option>
+                <option value="ewt">EWT</option>
+                <option value="yrt">YRT</option>
+              </select>
+            </p>
+            <p>
+              <label>Zipcode</label>
+              <input type="number"  name="zipcode">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="newsletter">
+          <div class="container">
+            <legend>Donation details</legend>
+            <label>Select your donation item</label>
+             
+
+            <div class="checkboxes">
+              <p> 
+                <input type="checkbox" id="html_news" name="item" value="shoes,clothes,bags"/>
+                <label>shoes,clothes,bags</label>
+              </p>
+              <p>
+                <input type="checkbox" id="css_news" name="item" value="Books and stationaries"/>
+                <label>Books and stationaries</label>
+              </p>
+              <p>
+                <input type="checkbox" id="js_news" name="item" value="money"/>
+                <label>money</label>
+              </p>
+                <p>
+                <input type="checkbox" id="js_news" name="item" value="others"/>
+                <label>others</label>
+              </p>
+            </div>
+
+          
+              <label >How do you want to donate:</label>   
+              
+            </p>
+            <div class="radio-btn">
+              <p>
+                <input type="radio" id="html" value="drop yourself(free)" name="pickup"/>
+                <label>drop yourself(free)</label>
+              </p>
+              <p>
+                <input type="radio" id="plain_text" value="pick up from 2 wheeler(Rs.199" name="pickup"/>
+                <label>pick up from 2 wheeler(Rs.199)</label>
+              </p>
+              <input type="radio" id="plain_text" value="pick up from 4 wheeler(Rs.399)" name="pickup"/>
+                <label>pick up from 4 wheeler(Rs.399)</label>
+              </p>
+            </div>
+
+            <label>How did you find us?</label>
+            <p>
+              <select name="find">
+                <option value="PickOne">Pick One</option>
+                <option value="Google">Google</option>
+                <option value="Bing">Bing</option>
+                <option value="Social Site">Social Site</option>
+                <option value="Friends/Workplace">Friends/Workplace</option>            
+              </select>
+            </p>
+
+            <label>any other query</label>
+            <p>
+              <textarea  name="interest" required="please leave a message"></textarea> <br/>
+            </p>
+          </div>
+            <a href="thankyou.html"><button class="donate" name="submit" style="text-align:center;font-size:25px;width: 150px;padding:20px;margin: 100px;" type="submit">Donate</button></a>
+        </fieldset>
+      
+      </form>
+    </main>
+  </div>
+   
+ <div style="background-color: #c5e5e8"> 
+  <p style="text-align: center;"><b>Contact us at 1800 4500 9888</b></p>
+<div style="text-align: center;">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<p style="text-align: center;"><b>Email us at </b><a style="text-decoration:none; color: black;" href="#"><b>Help@humane.org</b></a></p>
+<p style="text-align: center;"><b>Copyright &copy; | Terms Of Use | Privacy Policy</b></p>
+<div>
+</body>
+</html>
+<!-- ---------------------------------------------------- -->

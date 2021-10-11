@@ -1,0 +1,309 @@
+
+/*------------------------------------------------COMMON ---------------------------------------------------------------------------*/
+
+header{
+
+  background: #F58BB3;
+  padding:10px;
+  text-align: center;
+  background-image:url("../dd.png");
+  width: 100%;
+  
+}
+h1{
+  color:#ffffff;
+  text-align:center;
+  font-variant:all-small-caps;
+}
+h2{
+  color:#000000;
+  font-variant-caps: titling-caps;
+}
+section{
+  background-color:#ffffff;
+  font-size:120%;
+}
+.menu nav a{
+      display:flex;
+   justify-content:space-between;
+align-items:center;
+border-radius: 5px;
+color:#000000;
+background:#c5e5e8;
+text-decoration:none;
+display:inline-block;
+width:150px;
+padding:10px;
+margin:15px;
+}
+
+nav a:hover {
+background-color: #ffffff;
+color: #000;
+}
+body{
+margin:0px;
+bottom: 0px;
+height: 200vh;
+
+}
+#active{
+ color: #000;
+ background-color: #ffffff;
+}
+
+/*-------------------------------------------------------------*/
+.left{
+border: 0px solid #808000;
+float: left;
+height:200vh;
+text-align:center;
+padding:20px;
+background:#c5e5e8;
+width:150px;
+display: inline-block;
+}
+.left img{
+  display: inline-block;
+border: 0px solid #000000;
+text-align:center;
+width: 160px;
+height: 160px;
+margin:15px;
+border-radius: 50%;
+}
+
+.right{
+
+text-align: left;
+background: none;
+position:absolute;
+margin-left: 250px;
+float:left;
+width: 80%;
+}
+
+
+.fa-user-circle {
+color: #c5e5e8;
+font-size: 50px;
+padding-left: 30px;
+float: left;
+margin-left: 25px;
+}
+
+nav a :hover{
+color: #ffffff;
+}
+
+.left p{
+  text-align: center; 
+  color:#1a6970 ;
+   size: 40px;
+   font-size: 20px;
+   font-weight: 900;
+
+}
+
+/*--------------------------------------FOOTER-------------------------------------------------*/
+footer {
+  position:relative;
+ margin-top: -100px;
+  clear: both;
+  height: 150px;
+ width: 100%;
+  text-align: center;
+  font-size: 1em;
+  bottom:0;
+  background-color: #c5e5e8;
+  background-size: cover;
+   z-index: 1;
+ }
+
+
+    .fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #C13584;
+  color: white;
+}
+
+}
+
+
+/*---------------------------------------HOME PAGE-----------------------------------------------*/
+
+
+
+.intro {
+  width: 100%;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 300;
+text-align: center;
+  height: 300px;
+  background-color:#b3b3b3;
+
+  margin-left:20px;
+  margin-top: none;
+}
+
+.heading1{
+  font-size: 40px;
+  color: #1a6970;
+}
+.heading2{
+    font-size: 30px;
+}
+
+ .info {
+  display: inline-block;
+   display:flex;
+   flex-direction:column;
+  float: left; 
+  width: 90%;
+  color: #060e36;
+  margin-left: 5%;
+  font-weight: 800; 
+  font-size: 20px;
+   text-align: justify;
+
+}
+#mapid{
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  display: inline;
+}
+/*------------------------------------photo---------------------*/
+.column2 {
+  float: left;
+  width: 23%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+
+}
+figure {
+  display: table;
+}
+figcaption {
+  
+  
+  display: table-caption;
+  caption-side: bottom;
+}
+/*------------------------------------------------------------------*/
+body {
+    margin: 0;
+}
+.ad80 {
+    width: 710px;
+    height: 90px;
+    border: solid 1px grey;
+    background-image: url('http://www.kinyu-z.net/data/wallpapers/169/1297142.jpg');
+    background-position: left;
+}
+.top-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 90px 90px 0 0;
+    border-color: #ff0048 transparent transparent transparent;
+}
+.off {
+    transform: rotate(-45deg);
+    color: black;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.pos {
+    position: relative;
+    top: -60px;
+    left: 5px;
+}
+.low {
+    color: black;
+    position: relative;
+    top: -90px;
+    left: 120px;
+    font-weight: 100;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 10px;
+}
+.high {
+    color: black;
+    position: relative;
+    top: -130px;
+    left: 145px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 56px;
+}
+.side {
+    background-color: #ff0048;
+    position: relative;
+    top: -220px;
+    width: 130px;
+    height:90px;
+    float: right;
+}
+.logo {
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.click {
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: #ff0;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+

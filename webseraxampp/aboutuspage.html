@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Humane: about us</title>
+<link rel="shortcut icon" href="imgs\hands.png">
+<link rel="stylesheet" href="css\humane.css">
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin="">
+<style type="text/css">
+  .fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #C13584;
+  color: white;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 200px; 
+  margin: 20px;
+}
+button{
+   background-color: #1a6970; 
+        width: 100px;
+        color: #ffffff; 
+        padding: 12px; 
+        margin: 10px 0px; 
+        border-radius: 30px;
+        cursor: pointer; 
+        text-align: center;
+          font-weight: 700;
+ }
+ button:hover,
+button:focus {
+  background: #ffffff;
+  color: #000;
+  outline: 0;
+  transition: background-color 1s ease-out;
+}
+#active{
+  background-color: #ffffff;
+  color: black;
+}
+ .p{
+  background: #1a6970;
+      font-size: 1.4em;
+    color:#ffffff;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+  }
+
+  @media (min-width: 320px) {
+ .p {
+   background-color: blue;
+ }
+}
+
+/* From 768px and up */
+@media (min-width: 768px) {
+  .p{
+    background-color: green;
+  }
+}
+
+/* From 1024px and up */
+@media (min-width: 1024px) {
+  .p {
+    background-color: yellow;
+  }
+}
+
+/* From 1224px and up */
+@media (min-width: 1224px) {
+  .p{
+    background-color:  #1a6970;
+  }
+}
+
+/* From 1824px and up */
+@media (min-width: 1824px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+/*  max-width query */
+/* From 850px and up, until 950px  */
+@media (min-width: 850px) and (max-width: 950px) {
+  .p{
+    background-color: purple;
+  }
+}
+}
+
+</style>
+
+<body background="imgs\bg.png" >
+
+
+<header>
+
+   <h1 style="display:flex; font-size:300%;text-align:center;justify-content: center;">HUMANE:DONATE AT DOORSTEP</h1>
+
+  <div>
+  <nav><a href="userlogin.php"><i class="fas fa-user-circle"></i></i></a></nav>
+  </div>
+
+  <div class="menu">
+  <nav>
+    <a href="Humanehomepage.html">HOME</a>
+    <a href="get.html">GET INVOLVED</a>
+    <a href="aboutuspage.html" id="active">ABOUT US</a>
+    <a href="contactus.html">CONTACT US</a>
+    <a href="donatepage.html">DONATE</a>
+  </nav>
+  </div>
+</header>
+</header>
+<main>
+           <div class="info"> 
+          <div class="info">
+            <p class="p"><b>HOW WE WORK</b></p>
+           
+           <p1><br> We all have that feeling of guilt when we have to abandon the stuff which we are not using anymore.We all have old books,toys, clothes and so many other things which are not useful to us but it can be to someone else.We don’t know what to do with these things and we either throw them or they keep lying somewhere in the corner of our house getting dusted.<br><br>
+           Its now time that we try to give these things a new life. Donating your old things to the needy ones can help someone them so much. Your old can become someones gold.<br>
+
+           How to Schedule a pickup?
+      1. Go to our Home page and enter your location.
+      2. Choose the option that you want to avail- Doorstep pickup (to avail a pickup)
+      or Drop off (in case you want to drop off the items yourself).
+      3. Fill in your details and schedule a pickup.</p1><br>
+
+      
+      <p class="p"><b>WHAT WE OFFER</b></p>
+      
+
+           <p2><br>Have you ever asked yourself: Which are the organizations where I can give away my old household items? Where can I donate my stuff ? Can someone pick up the donations from my home/office? Can I know the requirements of the NGOs near me and fulfill them on my birthday?
+       Your all the questions are answered bye HUMANE! Just go through our website and you will know everything about making a donation.
+           Its now time that we try to give these things a new life. Donating your old things to the needy ones can help someone them so much. Your old can become someones gold.</p2></br>
+
+           <p3><br>Humane is a platform which helps people get a designated place to donate books, clothes, stationery, shoes, sanitary products or even cash for the needy. It encourages people to donate more as they can see their efforts making a difference in the lives of the needy. </p3></br>
+
+      <p4><br>Humane makes it super easy for you to make donations. Just schedule a pickup and get the donations picked up from your doorstep. Spreading Happiness is just a click away!!<br><br></p4>
+
+    <p class="p"><b>FIND US:</b></p>
+
+       <!-- -----------------leaflet map------------------------------------ -->
+       <div id="mapid">
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+         crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+         crossorigin=""></script> 
+      </div>
+       <!--  ------------------------video------------------------------------------------>
+        
+      <div style="text-align: center;"> 
+          <button onclick="playPause()"> PLAY/PAUSE </button>
+            <button onclick="openFullscreen()">FullScreen</button>
+            <br><br>
+            <video id="video1" width="500" height="400">
+              <source src="sample.mp4" type="video/webm">
+
+              Your browser does not support HTML video.
+           </video>
+      </div> 
+<!-- ---------------------------------------------------------------------------------------- -->
+</div>
+</div>
+<!-- ----------------------photo---------------- -->
+<div class="row2">
+    
+  <div class="column2">
+    <figure><img src="imgs/shef.jpg" height="300px" width="250px" alt="Snow" style="width:100%"><figcaption><p style="font-size: 20px;font-weight: bold;">Shefali Shrivastava<br>IT Engineer</p></figcaption></figure>
+  </div>
+  <div class="column2">
+    <figure><img src="imgs/shinde.jpg" height="300px" width="250px" alt="Snow" style="width:100%"><figcaption><p style="font-size: 20px;font-weight: bold;">Surabhi Shinde<br>IT Engineer</p></figcaption></figure>
+  </div>
+  <div class="column2">
+    <figure><img src="imgs/Tannu.jpg" height="300px" width="250px" alt="Snow" style="width:100%"><figcaption><p style="font-size: 20px;font-weight: bold;">Sayali Shetye<br>IT Engineer</p></figcaption></figure>
+  </div>
+  <div class="column2">
+    <figure><img src="imgs/Shete.jpg" height="300px" width="250px" alt="Snow" style="width:100%"><figcaption><p style="font-size: 20px;font-weight: bold;">Taruna Rawat<br>IT Engineer</p></figcaption></figure>
+  </div>
+</div>
+<!-- ------------------------------------------- -->
+
+<script> 
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+
+/* Get the element you want displayed in fullscreen mode (a video in this example): */
+var elem = document.getElementById("video1");
+
+/* When the openFullscreen() function is executed, open the video in fullscreen.
+Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script> 
+
+
+
+<!-- ----------------------------------------------------------------------------- -->
+   <script type="text/javascript">
+  var mymap = L.map('mapid').setView([18.9894, 73.1175], 16);
+
+    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         
+         // Adding layer to the map
+         mymap.addLayer(layer);
+
+     var marker = L.marker([18.9894, 73.1175]).addTo(mymap);
+
+  var circle = L.circle([18.9894, 73.1175], {
+      color: 'red',
+      fillColor: '#f03',
+      fillOpacity: 0.5,
+      radius: 100
+  }).addTo(mymap);
+
+  marker.bindPopup("<b>Humane!").openPopup();
+
+  var popup = L.popup();
+
+  function onMapClick(e) {
+      popup
+          .setLatLng(e.latlng)
+          .setContent("You clicked the map at " + e.latlng.toString())
+          .openOn(mymap);
+  }
+
+  mymap.on('click', onMapClick);
+  </script>
+  </main>
+<!-- footer -->
+   <footer>
+  <p style="text-align: center;"><b>Email us at </b><a style="text-decoration:none; color: black;" href="#"><b>Help@humane.org | Contact us at 1800 4500 9888</b></a></p>
+ 
+<div style="text-align: center;">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<p style="text-align: center;"><b>Copyright &copy; | Terms Of Use | Privacy Policy</b></p>
+</div>
+</footer>
+</body>
+
+</html>
+
+
